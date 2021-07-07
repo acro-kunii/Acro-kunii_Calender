@@ -1,0 +1,51 @@
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #eee;
+}
+
+thead,
+tfoot {
+  background: #eee;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+/* 日曜日のみを赤くする */
+tbody td:first-child {
+  color: red;
+}
+
+/* 土曜日を青くする */
+tbody td:last-child {
+  color: blue;
+}
+
+/* todayを太文字にする */
+tfoot {
+  font-weight: bold;
+}
+/* 透明にする */
+td.disabled {
+  opacity: 0.3;
+}
+/* 太字にする */
+td.today {
+  font-weight: bold;
+}
+
+/* idセレクタをスタイリング */
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  user-select: none;
+}
